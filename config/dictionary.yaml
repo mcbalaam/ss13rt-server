@@ -1,0 +1,65 @@
+maps:
+  mt: "Meta Station"
+  ib: "IceBox Station"
+  bx: "NSS Journey"
+  dt: "Delta Station"
+  pb: "Pubby Station"
+  ks: "Kilo Station"
+gamerules:
+  sec: "Secret"
+events:
+  'st': 
+    title: "Раунд #{id} начинается на {map}!"
+    desc: "Очков угрозы: {thr_p}"
+  'end': 
+    title: "Раунд {id} закончился"
+  'csh': 
+    title: "Раунд {id} был прерван"
+  'dth': 
+    title: "{char} умирает в {loc}"
+    desc: "Локация: {loc} <br>Координаты: {coord}"
+  'ann': 
+    title: "Оповещение {char_n} - {role}"
+    desc: 'Оповещение отправлено в {loc} <br>Стенограмма оповещения: <br><br>"{msg}"'
+  'aia': 
+    title: "Оповещение ИИ: {char}"
+    desc: 'Стенограмма оповещения: <br><br>"{msg}"'
+  'cen': 
+    title: "Приоритетное оповещение от ЦК"
+    desc: "{msg}"
+  'grn': 
+    title: "Уровень угрозы {change_verb} до Зелёный"
+    desc: "{char} устанавливает уровень угрозы Зелёный в {loc}, {coord}"
+  'orn': 
+    title: "Уровень угрозы {change_verb} до Оранжевый"
+    desc: "Уровень угрозы Оранжевый установлен {orange_cause}"
+  'vio': 
+    title: "Уровень угрозы {change_verb} до Фиолетовый"
+    desc: "{char} устанавливает уровень угрозы Фиолетовый в {loc}, {coord}"
+  'amb': 
+    title: "Введён уровень угрозы Янтарный!"
+    desc: "{char} устанавливает уровень угрозы Янтарный в {loc}, {coord}"
+  'red': 
+    title: "ВНИМАНИЕ! КОД - КРАСНЫЙ!"
+    desc: "{char} устанавливает уровень угрозы Красный в {loc}, {coord}"
+  'del': 
+    title: "ТРЕВОГА! КОД - ДЕЛЬТА!"
+    desc: "Уровень угрозы Дельта установлен автоматически из-за угрозы уничтожения станции"
+  'fxs': 
+    title: "{char} отправляет факс на {fax_dst}"
+    desc: '{char} отправляет документ из {fax_org} на {fax_dst}  <br>Содержание документа: <br><br>"{msg}"'
+  'fxr': 
+    title: "На {fax_dst} прислан факс от {fax_org}"
+    desc: "На {fax_dst} прислан документ от {fax_org}. \nСодержание документа: \n{msg} "
+  'ant': 
+    title: "Режим игры выдаёт мидраундного антагониста {ntg_type} {char}"
+    desc: "{char} становится мидраундным антагонистом {ntg_type} \n Цели антагониста: \n{obj_list}"
+  'ntn':
+    title: "Ночное освещение включено"
+  'ntf':
+    title: "Ночное освещение отключено"
+  'nte':
+    title: "Ночное освещение аварийно отключено"
+additional:
+  auto: "автоматически в связи с аварийной ситуацией"
+  manually: "{char} в {loc}, {coord}"
